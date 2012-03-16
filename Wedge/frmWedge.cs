@@ -63,7 +63,7 @@ namespace Wedgies
            
             if (chkOnOff.Checked)
             {
-                port.PortName = cboPort.SelectedItem + "";
+                port.PortName = (string)cboPort.SelectedItem;
                 port.BaudRate = (int)cboBaudRate.SelectedItem;
                 port.Open();
                 
